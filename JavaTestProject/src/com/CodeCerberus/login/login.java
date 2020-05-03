@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.CodeCerberus.DAO.loginDao;
+import com.CodeCerberus.utill.encryptions;
 
 @WebServlet("/login")
 public class login extends HttpServlet {
@@ -21,7 +22,7 @@ public class login extends HttpServlet {
 	{		
 		
 		String uname = request.getParameter("txtUsername");
-		String pass = request.getParameter("txtPassword");
+		String pass = encryptions.encrypt(request.getParameter("txtPassword")); 
 		
 		loginDao dao = new loginDao();//call connection class
 		

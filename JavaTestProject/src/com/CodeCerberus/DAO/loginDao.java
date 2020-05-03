@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import com.mysql.jdbc.Connection;
 
 public class loginDao {
-	String sql = "select * from login where userName=? and password=?";
+	String sql = "select * from user where username=? and password=?";
 	String url = "jdbc:mysql://localhost:3306/java";
 	String username = "root";
 	String password = "";
