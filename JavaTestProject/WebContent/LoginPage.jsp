@@ -24,7 +24,7 @@
 		<table>
 			<tr>
 				<td>User Name</td>
-				<td><input type="text" name="txtUsername" placeholder="Username" value=<%= lastUser %> ></td>
+				<td><input type="text" name="txtUsername" placeholder="User Name" value=<%= lastUser %> ></td>
 			</tr>
 			<tr>
 				<td>Password</td>
@@ -35,5 +35,7 @@
 			</tr>
 		</table>
 	</form>
+	<br>
+	Don't have an account <a href="signup.jsp">Create a new account</a> 
 </body>
 </html>
